@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Antonio Kassab</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/biografia.html">Biografía</a></li>
+                <li><a href="../pages/trabajos.html">Trabajos</a></li>
+                <li><a href="../pages/servicios.html">Servicios</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <h1>Contactate:</h1>
+        <img src="../assets/caramaloparaquenadiellame.jpeg" alt="Antonio Kassab con cara mala para que te contactes ya">
+    </header>
+    <main class="fondonaranjapages"> <!-- en form action no hice adonde va la info por eso puse # -->
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="servicio">Servicio:</label>
+            <select id="servicio" name="servicio" required>
+                <option value="">Selecciona un servicio:</option>
+                <option value="">Actuación, Teatro y Cine.</option>
+                <option value="">Dirección y dirección de actores.</option>
+                <option value="">Talleres y capacitaciones.</option>
+                <option value="">Asesoramiento artistico profesional.</option>
+            </select>
+
+            <label for="mensaje">Detalle:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+     <footer> 
+        <section>
+        <p>¿Tenés un proyecto en mente?</a></p>
+        <a href="#" class="footerescena">Entremos en escena.</a>
+        </section>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://wa.me/5493854473038" target="_blank">
+                        <img src="../assets/whatsapp.png" alt="WhatsApp"> 
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/antonio_waka" target="_blank">
+                        <img src="../assets/logotipo-de-instagram.png" alt="Instagram"> 
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:kassabantonio@gmail.com">
+                        <img src="../assets/email.png" alt="Email"> 
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

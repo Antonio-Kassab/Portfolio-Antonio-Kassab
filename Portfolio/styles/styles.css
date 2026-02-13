@@ -1,0 +1,231 @@
+   
+    * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+
+}
+.footerescena{
+    color: #ff864e;
+    text-decoration: underline; 
+    
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Quita un espacio extraño que suelen dejar abajo */
+}
+
+@media (max-width: 960px) {
+body {
+    width: 100%; 
+}
+}
+
+
+
+header {
+    background-color: #8ebacd;
+    
+}  
+
+footer{
+    background-color: #8ebacd;
+
+}
+
+.titulonaranja{
+    color: #ff864e;
+}
+
+a {
+    color: #ff864e;
+    text-decoration: none;
+}
+
+.serviciosindexceleste {
+    color: #035579;
+    padding: 1rem;
+}
+
+.buttonceleste {
+    background-color: #1488ba;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2rem;
+    border: none;
+    
+}
+
+.fondonaranjapages {
+    background-color: #eab9a3;
+}
+
+.fondocelestepages {
+    background-color: #d1eee9; /* Tu fondo turquesa */
+    
+}
+
+article{
+    background-color: #eab9a3;
+  
+}
+
+.headerindex {
+    background-image: url('../assets/fotoportada.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40rem; 
+    /* Centrar el texto y los elementos adentro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+} 
+
+.h1index {
+    font-size: 4rem;
+    margin-top: 2rem;
+    letter-spacing: 0.3rem;
+}
+
+.p1index {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    font-weight: 550;
+
+}
+
+
+
+
+
+.biografiaindex {
+    margin: 2rem 4rem; /* Espacio alrededor de la sección */
+    text-align: center; /* Centrar el texto dentro de la sección */
+}
+
+.serviciosindex {
+    
+    
+    display: grid; /* Activamos el modo rejilla */
+    grid-template-columns: repeat(4, 1fr); /* Crea 2 columnas del mismo tamaño */
+    gap: 1rem; /* Espacio entre cada cuadro de servicio */
+    padding: 2rem;
+    background-color: #d1eee9; /* Tu fondo turquesa */
+}
+
+.serviciosindex article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+/* Ajuste para que todas las fotos midan lo mismo sin deformarse */
+.serviciosindex img {
+    width: 100%;       /* Ocupa el ancho de su columna */
+    height: 100%;     /* Altura fija para que todo quede parejo */
+    object-fit: cover; /* Recorta la imagen para que no se estire */
+    border-radius: 0px;
+    margin-bottom: 10px;
+}
+
+.h2index {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+    color: #3ab1f2;
+}
+
+.serviciosindexnaranja {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    color: #ff864e;
+    margin-bottom: -2rem;
+}
+
+
+.menu {
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    background: #ff864e;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    z-index: 1001;
+    border-radius: 5%;
+    transition: 0.3s;
+}
+
+.menu:hover {
+    background: #3ab1f2;
+}
+
+
+.overlay {
+    width: 350px;
+    height: auto;
+    position: fixed;
+    z-index: 2000;
+    top: 50%;
+    right: -350px;
+    transform: translateY(-50%);
+    background-color: black;
+    overflow: hidden;
+    transition: right 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.overlaycontenido {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.overlaycontenido a {
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #ff864e;
+    transition: 0.3s;
+    display: block;
+}
+
+.overlaycontenido a:hover {
+    color: #f1f1f1;
+}
+
+.equis {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.equis:hover {
+    color: #e67e22;
+}
