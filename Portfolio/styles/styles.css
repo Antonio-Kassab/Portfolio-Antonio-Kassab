@@ -6,155 +6,12 @@ box-sizing: border-box;
 font-family: 'Montserrat', sans-serif;
 
 }
-.footerescena{
-    color: #ff864e;
-    text-decoration: underline; 
-    
-}
-
 
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Quita un espacio extraño que suelen dejar abajo */
+    display: block; 
 }
-
-@media (max-width: 960px) {
-body {
-    width: 100%; 
-}
-}
-
-
-
-header {
-    background-color: #8ebacd;
-    
-}  
-
-footer{
-    background-color: #8ebacd;
-
-}
-
-.titulonaranja{
-    color: #ff864e;
-}
-
-a {
-    color: #ff864e;
-    text-decoration: none;
-}
-
-.serviciosindexceleste {
-    color: #035579;
-    padding: 1rem;
-}
-
-.buttonceleste {
-    background-color: #1488ba;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    margin: 2rem;
-    border: none;
-    
-}
-
-.fondonaranjapages {
-    background-color: #eab9a3;
-}
-
-.fondocelestepages {
-    background-color: #d1eee9; /* Tu fondo turquesa */
-    
-}
-
-article{
-    background-color: #eab9a3;
-  
-}
-
-.headerindex {
-    background-image: url('../assets/fotoportada.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 40rem; 
-    /* Centrar el texto y los elementos adentro */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; 
-} 
-
-.h1index {
-    font-size: 4rem;
-    margin-top: 2rem;
-    letter-spacing: 0.3rem;
-}
-
-.p1index {
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-    font-weight: 550;
-
-}
-
-
-
-
-
-.biografiaindex {
-    margin: 2rem 4rem; /* Espacio alrededor de la sección */
-    text-align: center; /* Centrar el texto dentro de la sección */
-}
-
-.serviciosindex {
-    
-    
-    display: grid; /* Activamos el modo rejilla */
-    grid-template-columns: repeat(4, 1fr); /* Crea 2 columnas del mismo tamaño */
-    gap: 1rem; /* Espacio entre cada cuadro de servicio */
-    padding: 2rem;
-    background-color: #d1eee9; /* Tu fondo turquesa */
-}
-
-.serviciosindex article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    
-}
-
-/* Ajuste para que todas las fotos midan lo mismo sin deformarse */
-.serviciosindex img {
-    width: 100%;       /* Ocupa el ancho de su columna */
-    height: 100%;     /* Altura fija para que todo quede parejo */
-    object-fit: cover; /* Recorta la imagen para que no se estire */
-    border-radius: 0px;
-    margin-bottom: 10px;
-}
-
-.h2index {
-    font-size: 2.5rem;
-    text-align: left;
-    margin-bottom: 1.5rem;
-    color: #3ab1f2;
-}
-
-.serviciosindexnaranja {
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 0.5rem;
-    color: #ff864e;
-    margin-bottom: -2rem;
-}
-
 
 .menu {
     position: fixed;
@@ -178,7 +35,7 @@ article{
 
 
 .overlay {
-    width: 350px;
+    width: 13rem;
     height: auto;
     position: fixed;
     z-index: 2000;
@@ -204,7 +61,7 @@ article{
 .overlaycontenido a {
     padding: 1rem;
     text-decoration: none;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #ff864e;
     transition: 0.3s;
     display: block;
@@ -218,7 +75,7 @@ article{
     position: absolute;
     top: 15px;
     right: 20px;
-    font-size: 40px;
+    font-size: 2rem;
     background: none;
     border: none;
     color: white;
@@ -228,4 +85,228 @@ article{
 
 .equis:hover {
     color: #e67e22;
+}
+
+.headerindex{
+    background-image: url('../assets/fotoportada.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 40rem; 
+    /* Centrar el texto y los elementos adentro */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; 
+    font-size: 1.6rem;
+    font-weight: 550;
+    letter-spacing: 0.2rem;
+} 
+
+.headerindex h1 {
+    font-size: 4rem;
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+.biografiaindex {
+    margin: 1rem 2rem; 
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 550; 
+    color: #e67e22;
+    letter-spacing: 0.1rem;
+}
+
+.biografiaindex h2 {       
+    font-size: 2.5rem;
+    text-align: left;
+    color: #3ab1f2;
+    font-weight: 600;
+} 
+
+.buttonceleste {
+    background-color: #1488ba;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none; 
+    border: none;
+    border-radius: 0.2rem;
+}
+
+.buttonmas1 {
+
+    border-radius: 0.2rem;
+    background-color: #1488ba; 
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0rem 1rem;
+}
+
+.buttonmas1:hover {
+    background-color: #ff864e;
+    color: white;
+}
+
+.fondocelestepages {
+    background-color: #d1eee9;  
+}
+
+.serviciosindexnaranja {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0.5rem;
+    color: #ff864e;
+    margin-bottom: -2rem;
+    font-weight: 550;
+}
+
+.cartas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.card-link {
+    color: #ff864e;
+    text-decoration: none;
+    font-weight: 550;
+    transition: 0.5s;
+}
+
+.card-link:hover {
+    color: #1488ba;
+}
+
+.container-fluid {
+    padding: 3rem 5rem;
+}
+
+.col-md-3 {
+    padding: 0rem;
+}
+
+.col-md-3 img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.contenedor-imagen {
+    position: relative;
+     
+}
+
+.buttonmas {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 0.2rem;
+    background-color: #1488ba; 
+    border: none;
+    color: white;
+    font-size: 3rem;
+    padding: 0rem 2rem;
+}
+
+.buttonmas:hover {
+    background-color: #ff864e;
+    color: white;
+}
+
+
+a {
+    color: #ff864e;
+    text-decoration: none;
+}
+
+.footerprincipal {
+  
+    background-color: #d1eee9; 
+}
+
+.textopregunta {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #495057; 
+}   
+
+.linkescena {
+    color: #ff864e; 
+    font-size: 1.5rem;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.linkescena:hover {
+    color: #3ab1f2; 
+}
+
+.iconosocial {
+    color: #343a40; 
+    font-size: 1.8rem;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.iconosocial:hover {
+    color: #ff864e; 
+    transform: scale(1.1); 
+}
+
+@media (max-width: 960px) {
+body {
+    width: 100%; 
+}
+}
+@media (max-width: 960px) {
+.menu {
+        font-size: 1rem;
+        top: 47%;
+    }
+}
+
+@media (max-width: 375px) {
+.menu {
+        font-size: 0.8rem;
+        top: 54%;
+    }  
+}
+@media (max-width: 960px) {
+.overlay {
+        width: 10rem;
+    }
+}
+
+@media (max-width: 375px) {
+.overlay {
+        width: 8rem;
+    }
+}
+@media (max-width: 960px) {
+.equis, .overlaycontenido a {
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 375px) {
+.equis, .overlaycontenido a {
+        font-size: 1.2rem;
+    }  
 }

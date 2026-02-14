@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antonio Kassab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header class="headerindex"> 
+
+        <p>ACTOR | DIRECTOR | DRAMATURGO</p>
+        <h1>ANTONIO KASSAB</h1>
+
     <button class="menu" onclick="toggleMenu()">MENU +</button>
 
     <div id="menudesplegable" class="overlay">
@@ -21,78 +27,95 @@
             <a href="pages/contacto.html">Contacto</a>
         </nav>
     </div>
-
-    <header class="headerindex"> 
-        <p class="p1index">ACTOR | DIRECTOR | DRAMATURGO</p>
-        <h1 class="h1index">ANTONIO KASSAB</h1>
-
     </header>
     <main>
         <section class="biografiaindex">
-            <h2 class="h2index">Biografía</h2>
-            <p class="titulonaranja p1index">Escena, texto y movimiento. Hacedor teatral enfocado en la creación de experiencias inmersivas y la investigación dramática. Creo en el teatro como un acto de resistencia y belleza en constante transformación.</p>
-            <button class="buttonceleste"><a href="pages/biografia.html" style="color: white;">MAS</a></button>
+            <h2>Sobre mi:</h2>
+            <p>Escena, texto y movimiento. Hacedor teatral enfocado en la creación de experiencias inmersivas y la investigación dramática. Creo que el teatro y el cine son actos de resistencia y belleza en constante transformación.</p>
+            <a href="pages/biografia.html" class="btn btn-info buttonmas1">+</a>
         </section>
         <section class="fondocelestepages">
             <div>
             <h2 class="serviciosindexnaranja">Servicios</h2>
             </div>
-                <article class="card" style="width: 18rem;">
+            <div class="cartas">
+                <article class="card" style="width: 13rem;">
                     <img src="assets/actuacion.jpeg" alt="Antonio Kassab actuando">
                     <div class="card-body">
-                        <a href="pages/servicios.html" class="card-link">Actuación, Teatro y Cine</a>
+                        <a href="pages/servicios.html" class="card-link">Actuación en Teatro y Cine</a>
                     </div>
                 </article>
-                <article class="card" style="width: 18rem;">
+                <article class="card" style="width: 13rem;">
                         <img src="assets/direccion.jpeg" class="card-img-top" alt="Antonio Kassab dirigiendo">
                         <div class="card-body">
-                            <a href="pages/servicios.html" class="card-link">Dirección y dirección de actores</a>
+                            <a href="pages/servicios.html" class="card-link">Dirección teatral y dirección de actores</a>
                         </div>
                 </article>
-                <article class="card" style="width: 18rem;">
+                <article class="card" style="width: 13rem;">
                         <img src="assets/tallerycapacitaciones.png" class="card-img-top" alt="Antonio Kassab dictando un taller">
                         <div class="card-body">
                             <a href="pages/servicios.html" class="card-link">Talleres y capacitaciones</a>
                         </div>
                 </article>
-                <article class="card" style="width: 18rem;">
-                        <img src="assets/escrituracreativa.png" class="card-img-top" alt="imagen de una libreta y un lápiz">
+                <article class="card" style="width: 13rem;">
+                        <img src="assets/asesoramientoartisticoprofesional.jpeg" class="card-img-top" alt="organización de un proyecto teatral en sala">
                         <div class="card-body">
                            <a href="pages/servicios.html" class="card-link">Asesoramiento artístico profesional</a>
                         </div>
                 </article>
+                <article class="card" style="width: 13rem;">
+                    <img src="assets/escrituracreativa.png" alt="Manos de Antonio Kassab escribiendo">
+                    <div class="card-body">
+                        <a href="pages/servicios.html" class="card-link">Dramaturgia y guion</a>
+                    </div>
+                </article>
+                <article class="card" style="width: 13rem;">
+                    <img src="assets/escenografia.jpeg" alt="actriz en escena con una escenografía detras">
+                    <div class="card-body">
+                        <a href="pages/servicios.html" class="card-link">Escenografía y utilería</a>
+                    </div>
+                </article>
+            </div>
         </section>
         <section>
-            <h2 class="titulonaranja">Trabajos</h2>
-            <img src="assets/desencajadosdireccion.jpeg" alt="">
-            <img src="assets/elquerervivirdireccionydramaturgia.jpeg" alt="">
-            <img src="assets/raquelactuacion.jpeg" alt="">
-            <button class="buttonceleste"><a href="pages/trabajos.html" style="color: white;">MAS</a></button>
+            <h2 class="serviciosindexnaranja">Trabajos</h2>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
+            <div class="col-md-3">
+            <img src="assets/desencajadosdireccion.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+            <img src="assets/elquerervivirdireccionydramaturgia.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+            <img src="assets/raquelactuacion.jpeg" alt="" class="img-fluid">
+            </div>
+            <div class="col-md-3">
+                <div class="contenedor-imagen">
+                    <img src="assets/rasguidoindex.jpeg" alt="" class="img-fluid">
+                    <a href="pages/trabajos.html" class="btn btn-info buttonmas">+</a>
+                </div>
+            </div>
+            </div>
+        </div>
         </section>
     </main>
-    <footer>
-        <section>
-        <p>¿Tenés un proyecto en mente?</a></p>
-        <a href="pages/contacto.html" class="footerescena">Entremos en escena.</a>
-        </section>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://wa.me/5493854473038" target="_blank">
-                        <img src="assets/whatsapp.png" alt="WhatsApp"> 
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/antonio_waka">
-                        <img src="assets/instagram.png" alt="Instagram"> 
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:kassabantonio@gmail.com">
-                        <img src="assets/email.png" alt="Email"> 
-                    </a>
-                </li>
-            </ul>
+    <footer class="footerprincipal container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-md-6 text-start">
+                    <p class="mb-1 textopregunta">¿Tenés un proyecto en mente?</p>
+                    <a href="pages/contacto.html" class="linkescena">¡Entremos en escena!</a>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-around gap-4">
+                    <a href="https://wa.me/" class="iconosocial"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://instagram.com/antonio_waka" class="iconosocial"><i class="bi bi-instagram"></i></a>
+                    <a href="mailto:kassabantonio@gmail.com" class="iconosocial"><i class="bi bi-envelope"></i></a>
+                </div>
+
+            </div>
         </div>
     </footer>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
