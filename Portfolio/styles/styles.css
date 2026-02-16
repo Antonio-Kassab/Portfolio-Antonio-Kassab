@@ -152,7 +152,7 @@ img {
     color: white;
 }
 
-.fondocelestepages {
+.fondocelesteindex {
     background-color: #d1eee9;  
 }
 
@@ -209,9 +209,8 @@ img {
     object-fit: cover;
 }
 
-.contenedor-imagen {
+.contenedorimagen {
     position: relative;
-     
 }
 
 .buttonmas {
@@ -310,3 +309,190 @@ body {
         font-size: 1.2rem;
     }  
 }
+
+/* Estilos para la página de biografía (algunos)*/ 
+
+.fondobiografia {
+    background-image: url("../assets/biografia.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center;
+    background-color: #000;
+}
+
+.headerbiografia {
+    background-color: #d1e7dd;
+    padding: 2rem; 
+    text-align: center;
+}
+
+.headerbiografia h1 {
+    font-size: 3rem;
+    font-weight: 550; 
+    color: #e67e22;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin: 2rem;
+}
+
+.cajatextobiografia {
+    background-color: #d1e7dd;; 
+    padding: 2rem;   
+}
+
+.ventana {
+    padding: 6rem ;
+}
+
+@media (max-width: 400px) {
+    .headerbiografia h1 {
+     font-size: 2rem;
+    }
+
+    .cajatextobiografia {
+        padding: 1rem;
+    }
+
+    .ventana {
+        padding: 5rem;
+    }
+
+}
+
+/* Estilos para la página de servicios (algunos)*/ 
+
+.mainservicios {
+    display: inline;
+    flex-direction: column;
+  
+}
+.actuacion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.textoimagen1 {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.2rem;
+    background-color: #1488ba; 
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 0rem 2rem;
+}
+
+.contenedorimagenservicios{
+    position: relative;
+}
+
+.contenedorimagenservicios img {
+    width: 100%;       
+    height: 35rem;     
+    object-fit: cover; 
+    display: block;
+}
+
+.textoimagen2 {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    border-radius: 0.2rem;
+    background-color: #e67e22;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0rem 2rem;
+}
+
+.textoimagen3 {
+    position: absolute;
+    text-align: center;
+    bottom: 1rem;
+    font-weight: 550;
+    color: white;
+    font-size: 1rem;
+    padding: 0rem 4rem;
+}
+
+@media (max-width: 1500px) {
+    .textoimagen1 {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .textoimagen2 {
+        font-size: 1rem;
+        top: 2.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .textoimagen3 {
+        font-size: 0.9rem;
+        padding: 0rem 2rem;
+        bottom: 1.5rem;
+    }
+
+    .contenedorimagenservicios img {
+        height: 25rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .textoimagen1 {
+        font-size: 1.2rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .textoimagen2 {
+        font-size: 0.85rem;
+        top: 2rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .textoimagen3 {
+        font-size: 0.75rem;
+        padding: 0rem 1.5rem;
+        bottom: 1rem;
+    }
+
+    .contenedorimagen img {
+        height: 20rem;
+    }
+}
+
+/* Estilos para la página de trabajos (algunos)*/
+
+.headerbiografia h2 {
+    font-size: 1.5rem; 
+    color: #1488ba;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    margin: 2rem;
+    line-height: 2rem;
+}
+
+.carousel-item img {
+    height: 70vh; 
+    object-fit: cover;
+    object-position: center; 
+}
+
+@media (max-width: 675px) {
+    .headerbiografia h2 {
+        font-size: 1.3rem;
+    }
+
+    .headerbiografia h1 {
+        font-size: 2rem;
+    }
+}
+
+/* Estilos para la página de contacto (algunos)*/

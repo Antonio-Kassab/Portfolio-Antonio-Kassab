@@ -4,77 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Antonio Kassab</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header> 
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/biografia.html">Biografía</a></li>
-                <li><a href="../pages/trabajos.html">Trabajos</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-            </ul>
+    <div>
+        <button class="menu" onclick="toggleMenu()">MENU +</button>
+
+    <div id="menudesplegable" class="overlay">
+        <button class="equis" onclick="toggleMenu()">&times;</button>
+        <nav class="overlaycontenido">
+            <a href="../index.html">Inicio</a>
+            <a href="../pages/biografia.html">Biografía</a>
+            <a href="../pages/servicios.html">Servicios</a>
+            <a href="../pages/trabajos.html">Trabajos</a>
+            <a href="../pages/contacto.html">Contacto</a>
         </nav>
-        <h1 class="titulonaranja">SERVICIOS</h1>
+    </div>
+    </div>
+    <header class="headerbiografia">
+        <h1>SERVICIOS</h1>
     </header>
-    <main class="fondonaranjapages">
-        <section>
-            <article>
-                <img src="../assets/actuacion.jpeg" alt="Antonio Kassab actuando">
-                <h2>Actuación, Teatro y Cine.</h2>
-                <h3>"El cuerpo como herramienta de relato."</h3>
-                <p>Ofrezco un abordaje integral de la actuación, adaptando la técnica según el medio (la proyección del teatro o la intimidad del cine). Mi trabajo se basa en la verdad escénica y en la construcción de personajes con profundidad psicológica y física.</p>
-                <button class="buttonceleste"> <a href="../pages/contacto.html" style="color: white;">Consultar</a> </button>
-            </article>
-            <article>
-                <img src="../assets/direccion.jpeg" alt="Antonio Kassab dirigiendo unas mujeres en escena">
-                <h2>Dirección y dirección de actores</h2>
-                <h3>"La mirada que organiza el sentido."</h3>
-                <p>Como director, mi foco está en la creación de mundos posibles y en la potencia del encuentro vivo. Me especializo en la dirección de actores, trabajando codo a codo con el intérprete para encontrar la organicidad y el ritmo que la puesta requiere.</p>
-                <button class="buttonceleste"> <a href="../pages/contacto.html" style="color: white;">Consultar</a> </button>
-            </article>
-            <article>
-                <img src="../assets/tallerycapacitaciones.png" alt="Antonio Kassab dictando un taller">
-                <h2>Talleres y capacitaciones</h2>
-                <h3>"Espacios para el descubrimiento y el error."</h3>
-                <p>Capacitaciones para adolescentes y adultos, enfocados en la desinhibición, la técnica actoral y el juego dramático. El taller como un laboratorio de investigación donde pueden explorar su potencial creativo en un entorno seguro y profesional.</p>
-                <button class="buttonceleste"> <a href="../pages/contacto.html" style="color: white;">Consultar</a> </button>
-            </article>
-            <article>
-                <img src="../assets/escrituracreativa.png" alt="imagen de una libreta y un lápiz">
-                <h2>Asesoramiento artístico profesional</h2>
-                <h3>"Acompañamiento en el proceso creativo."</h3>
-                <p>Este servicio está diseñado para proyectos en desarrollo que necesitan una mirada externa y técnica. Ayudo a artistas y grupos a pulir su propuesta estética, organizar sus ideas y llevar sus proyectos desde el papel hasta la realización final.</p>
-                <button class="buttonceleste"> <a href="../pages/contacto.html" style="color: white;">Consultar</a> </button>
-            </article>
+    <main class="container-fluid mainservicios">
+        <div class="row">
+        <section class="col-md-6 mb-4 actuacion">
+                <div class="contenedorimagenservicios">
+                        <a href="../pages/contacto.html"><img src="../assets/actuacionservicios.jpeg" alt="" class="img-fluid">
+                        <h2 class="textoimagen1">Actuación, Teatro y Cine</h2>
+                        <p class="textoimagen2">"El cuerpo como herramienta de relato."</p>
+                        <p class="textoimagen3">Ofrezco un abordaje integral de la actuación, adaptando la técnica según el medio (la proyección del teatro o la intimidad del cine). Mi trabajo se basa en la verdad escénica y en la construcción de personajes con profundidad psicológica y física.</p>
+                        </a>    
+                </div>
         </section>
-    <footer> 
-        <section>
-        <p>¿Tenés un proyecto en mente?</a></p>
-        <a href="../pages/contacto.html" class="footerescena">Entremos en escena.</a>
+        <section class="col-md-6 mb-4 actuacion" >
+                <div class="contenedorimagenservicios">
+                        <a href="../pages/contacto.html"><img src="../assets/direccionservicios.jpeg" alt="" class="img-fluid">
+                        <h2 class="textoimagen1">Dirección y dirección de actores</h2>
+                        <p class="textoimagen2">"La mirada que organiza el sentido."</p>
+                        <p class="textoimagen3">Como director, mi foco está en la creación de mundos posibles y en la potencia del encuentro vivo. Me especializo en la dirección de actores, trabajando codo a codo con el intérprete para encontrar la organicidad y el ritmo que la puesta requiere.</p>
+                    </a>    
+                </div>
         </section>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://wa.me/5493854473038" target="_blank">
-                        <img src="../assets/whatsapp.png" alt="WhatsApp"> 
-                    </a>
-                </li>
-                <li>
-                    <a href="https://instagram.com/antonio_waka" target="_blank">
-                        <img src="../assets/logotipo-de-instagram.png" alt="Instagram"> 
-                    </a>
-                </li>
-                <li>
-                    <a href="mailto:kassabantonio@gmail.com">
-                        <img src="../assets/email.png" alt="Email"> 
-                    </a>
-                </li>
-            </ul>
+        <section class="col-md-6 mb-4 actuacion" >
+                <div class="contenedorimagenservicios">
+                        <a href="../pages/contacto.html"><img src="../assets/tallerycapacitacionesservicios.png" alt="" class="img-fluid">
+                        <h2 class="textoimagen1">Talleres y capacitaciones</h2>
+                        <p class="textoimagen2">"Espacios para el descubrimiento y el error."</p>
+                        <p class="textoimagen3">Capacitaciones para adolescentes y adultos, enfocados en la desinhibición, la técnica actoral y el juego dramático. El taller como un laboratorio de investigación donde pueden explorar su potencial creativo en un entorno seguro y profesional.</p>
+                    </a>    
+                </div>
+        </section>
+        <section class="col-md-6 mb-4 actuacion" >
+                <div class="contenedorimagenservicios">
+                        <a href="../pages/contacto.html"><img src="../assets/asesoramientoartisticoprofesionalservicios.jpeg" alt="" class="img-fluid">
+                        <h2 class="textoimagen1">Asesoramiento artistico profesional</h2>
+                        <p class="textoimagen2">"Acompañamiento en el proceso creativo."</p>
+                        <p class="textoimagen3">Este servicio está diseñado para proyectos en desarrollo que necesitan una mirada externa y técnica. Ayudo a artistas y grupos a pulir su propuesta estética, organizar sus ideas y llevar sus proyectos desde el papel hasta la realización final.</p>
+                    </a>                            
+                </div>
+        </section>
+        <section class="col-md-6 mb-4 actuacion" >
+                <div class="contenedorimagenservicios">
+                        <a href="../pages/contacto.html"><img src="../assets/escrituracreativaservicios.png" alt="" class="img-fluid">
+                        <h2 class="textoimagen1">Dramaturgia y guion</h2>
+                        <p class="textoimagen2">"Desarrollo de historias y personajes."</p>
+                        <p class="textoimagen3">Desarrollo de guiones y dramaturgia para proyectos teatrales, audiovisuales o de performance. Trabajo con la estructura narrativa, el desarrollo de personajes y la cohesión del universo escénico.</p>
+                    </a>    
+                </div>
+        </section>
+        <section class="col-md-6 mb-4 actuacion" >
+                <div class="contenedorimagenservicios">
+                        <a href="../pages/contacto.html"><img src="../assets/escenografiaservicios.jpeg" alt="" class="img-fluid">
+                        <h2 class="textoimagen1">Escenografía y utilería</h2>
+                        <p class="textoimagen2">"Construcción de ficción."</p>
+                        <p class="textoimagen3">Diseño y construcción de escenografías para teatro, cine y performances. Trabajo con la creación de ambientes que refuerzan la narrativa y el estado emocional de los personajes.</p>
+                    </a>    
+                </div>
+        </section>
+        </div>
+    </main>
+    <footer class="footerprincipal container-fluid">
+        <div class="container">
+            <div class="row align-items-center">
+                
+                <div class="col-md-6 text-start">
+                    <p class="mb-1 textopregunta">¿Tenés un proyecto en mente?</p>
+                    <a href="pages/contacto.html" class="linkescena">¡Entremos en escena!</a>
+                </div>
+
+                <div class="col-md-6 d-flex justify-content-around gap-4">
+                    <a href="https://wa.me/" class="iconosocial"><i class="bi bi-whatsapp"></i></a>
+                    <a href="https://instagram.com/antonio_waka" class="iconosocial"><i class="bi bi-instagram"></i></a>
+                    <a href="mailto:kassabantonio@gmail.com" class="iconosocial"><i class="bi bi-envelope"></i></a>
+                </div>
+
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("menudesplegable");
+    if (menu.style.right === "0px") {
+        menu.style.right = "-350px";
+    } else {
+        menu.style.right = "0px";
+    }
+}
+</script>
 </body>
 </html>
