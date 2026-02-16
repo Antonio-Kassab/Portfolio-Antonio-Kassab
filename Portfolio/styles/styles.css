@@ -4,7 +4,6 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Montserrat', sans-serif;
-
 }
 
 img {
@@ -32,7 +31,6 @@ img {
 .menu:hover {
     background: #3ab1f2;
 }
-
 
 .overlay {
     width: 13rem;
@@ -180,7 +178,6 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
 }
 
 .card-link {
@@ -230,14 +227,12 @@ img {
     color: white;
 }
 
-
 a {
     color: #ff864e;
     text-decoration: none;
 }
 
 .footerprincipal {
-  
     background-color: #d1eee9; 
 }
 
@@ -271,43 +266,23 @@ a {
 }
 
 @media (max-width: 960px) {
-body {
-    width: 100%; 
-}
-}
-@media (max-width: 960px) {
-.menu {
-        font-size: 1rem;
-        top: 47%;
-    }
-}
-
-@media (max-width: 375px) {
-.menu {
-        font-size: 0.8rem;
-        top: 54%;
-    }  
-}
-@media (max-width: 960px) {
-.overlay {
-        width: 10rem;
-    }
+body { 
+    width: 100%; }
+.menu { 
+    font-size: 1rem; top: 47%; }
+.overlay { 
+    width: 10rem; }
+.equis, .overlaycontenido a { 
+    font-size: 1.5rem; }
 }
 
 @media (max-width: 375px) {
-.overlay {
-        width: 8rem;
-    }
-}
-@media (max-width: 960px) {
-.equis, .overlaycontenido a {
-        font-size: 1.5rem;
-    }
-}
-@media (max-width: 375px) {
-.equis, .overlaycontenido a {
-        font-size: 1.2rem;
-    }  
+.menu { 
+    font-size: 0.8rem; top: 54%; }
+.overlay { 
+    width: 8rem; }
+.equis, .overlaycontenido a { 
+    font-size: 1.2rem; }
 }
 
 /* Estilos para la página de biografía (algunos)*/ 
@@ -364,8 +339,8 @@ body {
 .mainservicios {
     display: inline;
     flex-direction: column;
-  
 }
+
 .actuacion {
     display: flex;
     flex-direction: column;
@@ -377,7 +352,6 @@ body {
 }
 
 .textoimagen1 {
-    
     position: absolute;
     top: 0;
     left: 0;
@@ -496,3 +470,41 @@ body {
 }
 
 /* Estilos para la página de contacto (algunos)*/
+
+
+.botonenviar {
+    background-color: #1488ba;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none; 
+    border: none;
+    border-radius: 0.2rem;
+    transition: 0.3s;
+}
+
+.botonenviar:hover {
+    background-color: #ff864e;
+    color: white;
+}
+.col-md-6 {
+    padding: 0rem;
+    margin-bottom: 0%;
+}
+.col-md-6 img {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+@media (max-width: 768px) {
+    .botonenviar {
+        font-size: 1.5rem;
+        margin: 1rem 0;
+    }
+
+    .col-md-6 img {
+        height: 25rem;
+    }
+}

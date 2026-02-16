@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header> 
+<body> 
          <button class="menu" onclick="toggleMenu()">MENU +</button>
 
     <div id="menudesplegable" class="overlay">
@@ -23,31 +22,51 @@
             <a href="../pages/contacto.html">Contacto</a>
         </nav>
     </div>
-        <h1>Contactate:</h1>
-        <img src="../assets/caramaloparaquenadiellame.jpeg" alt="Antonio Kassab con cara mala para que te contactes ya">
+    <header class="headerbiografia">
+        <h1 >CONTACTATE:</h1>
     </header>
-    <main class="fondonaranjapages"> <!-- en form action no hice adonde va la info por eso puse # -->
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        <main class="container-fluid p-0 m-0">
+        <div class="row">
+            <div class="col-md-6">
+                <img class="img-fluid justify-content-left d-inline" src="../assets/caramaloparaquenadiellame.jpeg" alt="Antonio Kassab con cara mala para que te contactes ya">
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3 p-4">
+                        <label for="nombrecompleto" class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control" id="nombrecompleto" >
+                    </div>
+                    <div class="mb-3 p-4">
+                        <label for="Email" class="form-label">Correo electrónico</label>
+                        <input type="email" class="form-control" id="Email">
+                    </div>
+                    <div class="mb-3 p-4">
+                        <select class="form-select " aria-label="Servicio de interés">
+                            <option selected>Servicio de interés</option>
+                            <option value="1">Actuación, Teatro y Cine.</option>
+                            <option value="2">Dirección y dirección de actores.</option>
+                            <option value="3">Talleres y capacitaciones.</option>
+                            <option value="4">Asesoramiento artistico profesional.</option>
+                            <option value="5">Dramaturgia y guion.</option>
+                            <option value="6">Escenografía y utilería.</option>
+                            <option value="7">Otro.</option>
+                        </select>
+                    </div>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+                    <div class="mb-3 p-4">
+                        <label for="ciudad" class="form-label">Ciudad:</label>
+                        <input type="text" class="form-control" id="ciudad" >
+                    </div>
 
-            <label for="servicio">Servicio:</label>
-            <select id="servicio" name="servicio" required>
-                <option value="">Selecciona un servicio:</option>
-                <option value="">Actuación, Teatro y Cine.</option>
-                <option value="">Dirección y dirección de actores.</option>
-                <option value="">Talleres y capacitaciones.</option>
-                <option value="">Asesoramiento artistico profesional.</option>
-            </select>
-
-            <label for="mensaje">Detalle:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-            
-            <input type="submit" value="Enviar">
-        </form>
+                    <div class="mb-3 p-4">
+                        <label for="detalle" class="form-label">Detalle de la propuesta:</label>
+                        <textarea class="form-control" id="detalle" rows="4"></textarea>
+                    </div>
+                    <div class="justify-content-center d-flex">
+                    <button type="submit" class="btn btn-primary fs-3 botonenviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
     </main>
      <footer class="footerprincipal container-fluid">
         <div class="container">
