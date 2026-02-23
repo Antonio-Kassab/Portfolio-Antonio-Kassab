@@ -1,510 +1,517 @@
-   
-    * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
-    display: block; 
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .menu {
-    position: fixed;
-    right: 2%;
-    top: 50%;
-    background: #ff864e;
-    border: none;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-    font-weight: 800;
-    z-index: 1001;
-    border-radius: 5%;
-    transition: 0.3s;
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  background: #ff864e;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  z-index: 1001;
+  border-radius: 5%;
+  transition: 0.3s;
 }
 
 .menu:hover {
-    background: #3ab1f2;
+  background: #3ab1f2;
 }
 
 .overlay {
-    width: 13rem;
-    height: auto;
-    position: fixed;
-    z-index: 2000;
-    top: 50%;
-    right: -350px;
-    transform: translateY(-50%);
-    background-color: black;
-    overflow: hidden;
-    transition: right 1s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+  width: 13rem;
+  height: auto;
+  position: fixed;
+  z-index: 2000;
+  top: 50%;
+  right: -350px;
+  transform: translateY(-50%);
+  background-color: black;
+  overflow: hidden;
+  transition: right 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
 .overlaycontenido {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 .overlaycontenido a {
-    padding: 1rem;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #ff864e;
-    transition: 0.3s;
-    display: block;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #ff864e;
+  transition: 0.3s;
+  display: block;
 }
 
 .overlaycontenido a:hover {
-    color: #f1f1f1;
+  color: #f1f1f1;
 }
 
 .equis {
-    position: absolute;
-    top: 15px;
-    right: 20px;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
 .equis:hover {
-    color: #e67e22;
+  color: #e67e22;
 }
 
-.headerindex{
-    background-image: url('../assets/fotoportada.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 40rem; 
-    /* Centrar el texto y los elementos adentro */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: white; 
-    font-size: 1.6rem;
-    font-weight: 550;
-    letter-spacing: 0.2rem;
-} 
+.headerindex {
+  background-image: url("../assets/fotoportada.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 40rem;
+  /* Centrar el texto y los elementos adentro */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 550;
+  letter-spacing: 0.2rem;
+}
 
 .headerindex h1 {
-    font-size: 4rem;
-    margin-top: 1rem;
-    font-weight: 700;
+  font-size: 4rem;
+  margin-top: 1rem;
+  font-weight: 700;
 }
 
 .biografiaindex {
-    margin: 1rem 2rem; 
-    text-align: center;
-    font-size: 1.2rem;
-    font-weight: 550; 
-    color: #e67e22;
-    letter-spacing: 0.1rem;
+  margin: 1rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: #e67e22;
+  letter-spacing: 0.1rem;
 }
 
-.biografiaindex h2 {       
-    font-size: 2.5rem;
-    text-align: left;
-    color: #3ab1f2;
-    font-weight: 600;
-} 
+.biografiaindex h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  color: #3ab1f2;
+  font-weight: 600;
+}
 
 .buttonceleste {
-    background-color: #1488ba;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none; 
-    border: none;
-    border-radius: 0.2rem;
+  background-color: #1488ba;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.2rem;
 }
 
 .buttonmas1 {
-
-    border-radius: 0.2rem;
-    background-color: #1488ba; 
-    border: none;
-    color: white;
-    font-size: 2.5rem;
-    padding: 0rem 1rem;
+  border-radius: 0.2rem;
+  background-color: #1488ba;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 0rem 1rem;
 }
 
 .buttonmas1:hover {
-    background-color: #ff864e;
-    color: white;
+  background-color: #ff864e;
+  color: white;
 }
 
 .fondocelesteindex {
-    background-color: #d1eee9;  
+  background-color: #d1eee9;
 }
 
 .serviciosindexnaranja {
-    font-size: 2.5rem;
-    text-align: center;
-    padding: 0.5rem;
-    color: #ff864e;
-    margin-bottom: -2rem;
-    font-weight: 550;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: #ff864e;
+  margin-bottom: -2rem;
+  font-weight: 550;
 }
 
-.cartas{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-top: 1rem;
-    padding: 1rem;
+.cartas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .card-link {
-    color: #ff864e;
-    text-decoration: none;
-    font-weight: 550;
-    transition: 0.5s;
+  color: #ff864e;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.5s;
 }
 
 .card-link:hover {
-    color: #1488ba;
+  color: #1488ba;
 }
 
 .container-fluid {
-    padding: 3rem 5rem;
+  padding: 3rem 5rem;
 }
 
 .col-md-3 {
-    padding: 0rem;
+  padding: 0rem;
 }
 
 .col-md-3 img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .contenedorimagen {
-    position: relative;
+  position: relative;
 }
 
 .buttonmas {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    border-radius: 0.2rem;
-    background-color: #1488ba; 
-    border: none;
-    color: white;
-    font-size: 3rem;
-    padding: 0rem 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.2rem;
+  background-color: #1488ba;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  padding: 0rem 2rem;
 }
 
 .buttonmas:hover {
-    background-color: #ff864e;
-    color: white;
+  background-color: #ff864e;
+  color: white;
 }
 
 a {
-    color: #ff864e;
-    text-decoration: none;
+  color: #ff864e;
+  text-decoration: none;
 }
 
 .footerprincipal {
-    background-color: #d1eee9; 
+  background-color: #d1eee9;
 }
 
 .textopregunta {
-    font-size: 1rem;
-    font-weight: 600;
-    color: #495057; 
-}   
+  font-size: 1rem;
+  font-weight: 600;
+  color: #495057;
+}
 
 .linkescena {
-    color: #ff864e; 
-    font-size: 1.5rem;
-    text-decoration: underline;
-    transition: 0.3s;
+  color: #ff864e;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  transition: 0.3s;
 }
 
 .linkescena:hover {
-    color: #3ab1f2; 
+  color: #3ab1f2;
 }
 
 .iconosocial {
-    color: #343a40; 
-    font-size: 1.8rem;
-    transition: 0.3s;
-    text-decoration: none;
+  color: #343a40;
+  font-size: 1.8rem;
+  transition: 0.3s;
+  text-decoration: none;
 }
 
 .iconosocial:hover {
-    color: #ff864e; 
-    transform: scale(1.1); 
+  color: #ff864e;
+  transform: scale(1.1);
 }
 
 @media (max-width: 960px) {
-body { 
-    width: 100%; }
-.menu { 
-    font-size: 1rem; top: 47%; }
-.overlay { 
-    width: 10rem; }
-.equis, .overlaycontenido a { 
-    font-size: 1.5rem; }
+  body {
+    width: 100%;
+  }
+  .menu {
+    font-size: 1rem;
+    top: 47%;
+  }
+  .overlay {
+    width: 10rem;
+  }
+  .equis,
+  .overlaycontenido a {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 375px) {
-.menu { 
-    font-size: 0.8rem; top: 54%; }
-.overlay { 
-    width: 8rem; }
-.equis, .overlaycontenido a { 
-    font-size: 1.2rem; }
+  .menu {
+    font-size: 0.8rem;
+    top: 54%;
+  }
+  .overlay {
+    width: 8rem;
+  }
+  .equis,
+  .overlaycontenido a {
+    font-size: 1.2rem;
+  }
 }
 
-/* Estilos para la página de biografía (algunos)*/ 
+/* Estilos para la página de biografía (algunos)*/
 
 .fondobiografia {
-    background-image: url("../assets/biografia.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-position: center;
-    background-color: #000;
+  background-image: url("../assets/biografia.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000;
 }
 
 .headerbiografia {
-    background-color: #d1e7dd;
-    padding: 2rem; 
-    text-align: center;
+  background-color: #d1e7dd;
+  padding: 2rem;
+  text-align: center;
 }
 
 .headerbiografia h1 {
-    font-size: 3rem;
-    font-weight: 550; 
-    color: #e67e22;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    margin: 2rem;
+  font-size: 3rem;
+  font-weight: 550;
+  color: #e67e22;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 2rem;
 }
 
 .cajatextobiografia {
-    background-color: #d1e7dd;; 
-    padding: 2rem;   
+  background-color: #d1e7dd;
+  padding: 2rem;
 }
 
 .ventana {
-    padding: 6rem ;
+  padding: 6rem;
 }
 
 @media (max-width: 400px) {
-    .headerbiografia h1 {
-     font-size: 2rem;
-    }
+  .headerbiografia h1 {
+    font-size: 2rem;
+  }
 
-    .cajatextobiografia {
-        padding: 1rem;
-    }
+  .cajatextobiografia {
+    padding: 1rem;
+  }
 
-    .ventana {
-        padding: 5rem;
-    }
-
+  .ventana {
+    padding: 5rem;
+  }
 }
 
-/* Estilos para la página de servicios (algunos)*/ 
+/* Estilos para la página de servicios (algunos)*/
 
 .mainservicios {
-    display: inline;
-    flex-direction: column;
+  display: inline;
+  flex-direction: column;
 }
 
 .actuacion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 1rem;
-    margin-top: 1rem;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
 }
 
 .textoimagen1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 0.2rem;
-    background-color: #1488ba; 
-    border: none;
-    color: white;
-    font-size: 2.5rem;
-    padding: 0rem 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.2rem;
+  background-color: #1488ba;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 0rem 2rem;
 }
 
-.contenedorimagenservicios{
-    position: relative;
+.contenedorimagenservicios {
+  position: relative;
 }
 
 .contenedorimagenservicios img {
-    width: 100%;       
-    height: 35rem;     
-    object-fit: cover; 
-    display: block;
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  display: block;
 }
 
 .textoimagen2 {
-    position: absolute;
-    top: 3rem;
-    left: 0;
-    border-radius: 0.2rem;
-    background-color: #e67e22;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0rem 2rem;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  border-radius: 0.2rem;
+  background-color: #e67e22;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0rem 2rem;
 }
 
 .textoimagen3 {
-    position: absolute;
-    text-align: center;
-    bottom: 1rem;
-    font-weight: 550;
-    color: white;
-    font-size: 1rem;
-    padding: 0rem 4rem;
+  position: absolute;
+  text-align: center;
+  bottom: 1rem;
+  font-weight: 550;
+  color: white;
+  font-size: 1rem;
+  padding: 0rem 4rem;
 }
 
 @media (max-width: 1500px) {
-    .textoimagen1 {
-        font-size: 1.5rem;
-        padding: 0.5rem 1rem;
-    }
+  .textoimagen1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
 
-    .textoimagen2 {
-        font-size: 1rem;
-        top: 2.5rem;
-        padding: 0.5rem 1rem;
-    }
+  .textoimagen2 {
+    font-size: 1rem;
+    top: 2.5rem;
+    padding: 0.5rem 1rem;
+  }
 
-    .textoimagen3 {
-        font-size: 0.9rem;
-        padding: 0rem 2rem;
-        bottom: 1.5rem;
-    }
+  .textoimagen3 {
+    font-size: 0.9rem;
+    padding: 0rem 2rem;
+    bottom: 1.5rem;
+  }
 
-    .contenedorimagenservicios img {
-        height: 25rem;
-    }
+  .contenedorimagenservicios img {
+    height: 25rem;
+  }
 }
 
 @media (max-width: 1000px) {
-    .textoimagen1 {
-        font-size: 1.2rem;
-        padding: 0.5rem 0.8rem;
-    }
+  .textoimagen1 {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+  }
 
-    .textoimagen2 {
-        font-size: 0.85rem;
-        top: 2rem;
-        padding: 0.3rem 0.8rem;
-    }
+  .textoimagen2 {
+    font-size: 0.85rem;
+    top: 2rem;
+    padding: 0.3rem 0.8rem;
+  }
 
-    .textoimagen3 {
-        font-size: 0.75rem;
-        padding: 0rem 1.5rem;
-        bottom: 1rem;
-    }
+  .textoimagen3 {
+    font-size: 0.75rem;
+    padding: 0rem 1.5rem;
+    bottom: 1rem;
+  }
 
-    .contenedorimagen img {
-        height: 20rem;
-    }
+  .contenedorimagen img {
+    height: 20rem;
+  }
 }
 
 /* Estilos para la página de trabajos (algunos)*/
 
 .headerbiografia h2 {
-    font-size: 1.5rem; 
-    color: #1488ba;
-    letter-spacing: 0.1rem;
-    text-align: center;
-    margin: 2rem;
-    line-height: 2rem;
+  font-size: 1.5rem;
+  color: #1488ba;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 2rem;
+  line-height: 2rem;
 }
 
 .carousel-item img {
-    height: 70vh; 
-    object-fit: cover;
-    object-position: center; 
+  height: 70vh;
+  object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 675px) {
-    .headerbiografia h2 {
-        font-size: 1.3rem;
-    }
+  .headerbiografia h2 {
+    font-size: 1.3rem;
+  }
 
-    .headerbiografia h1 {
-        font-size: 2rem;
-    }
+  .headerbiografia h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Estilos para la página de contacto (algunos)*/
 
-
 .botonenviar {
-    background-color: #1488ba;
-    color: white;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    text-decoration: none; 
-    border: none;
-    border-radius: 0.2rem;
-    transition: 0.3s;
+  background-color: #1488ba;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.2rem;
+  transition: 0.3s;
 }
 
 .botonenviar:hover {
-    background-color: #ff864e;
-    color: white;
+  background-color: #ff864e;
+  color: white;
 }
 .col-md-6 {
-    padding: 0rem;
-    margin-bottom: 0%;
+  padding: 0rem;
+  margin-bottom: 0%;
 }
 .col-md-6 img {
-    width: 100%;
-    height: 50rem;
-    object-fit: cover;
-    object-position: top;
+  width: 100%;
+  height: 50rem;
+  object-fit: cover;
+  object-position: top;
 }
 
 @media (max-width: 768px) {
-    .botonenviar {
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
+  .botonenviar {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
 
-    .col-md-6 img {
-        height: 25rem;
-    }
+  .col-md-6 img {
+    height: 25rem;
+  }
 }

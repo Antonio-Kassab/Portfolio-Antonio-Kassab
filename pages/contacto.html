@@ -1,101 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - Antonio Kassab</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body> 
-         <button class="menu" onclick="toggleMenu()">MENU +</button>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button class="menu" onclick="toggleMenu()">MENU +</button>
 
     <div id="menudesplegable" class="overlay">
-        <button class="equis" onclick="toggleMenu()">&times;</button>
-        <nav class="overlaycontenido">
-            <a href="../index.html">Inicio</a>
-            <a href="../pages/biografia.html">Biografía</a>
-            <a href="../pages/servicios.html">Servicios</a>
-            <a href="../pages/trabajos.html">Trabajos</a>
-            <a href="../pages/contacto.html">Contacto</a>
-        </nav>
+      <button class="equis" onclick="toggleMenu()">&times;</button>
+      <nav class="overlaycontenido">
+        <a href="../index.html">Inicio</a>
+        <a href="biografia.html">Biografía</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="trabajos.html">Trabajos</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
     </div>
     <header class="headerbiografia">
-        <h1>CONTACTATE:</h1>
+      <h1>CONTACTATE:</h1>
     </header>
-        <main class="container-fluid p-0 m-0">
-        <div class="row">
-            <div class="col-md-6">
-                <img class="img-fluid justify-content-left d-inline" src="../assets/caramaloparaquenadiellame.jpeg" alt="Antonio Kassab con cara mala para que te contactes ya">
-            </div>
-            <div class="col-md-6">
-                <form>
-                    <div class="mb-3 p-4">
-                        <label for="nombrecompleto" class="form-label">Nombre completo</label>
-                        <input type="text" class="form-control" id="nombrecompleto" >
-                    </div>
-                    <div class="mb-3 p-4">
-                        <label for="Email" class="form-label">Correo electrónico</label>
-                        <input type="email" class="form-control" id="Email">
-                    </div>
-                    <div class="mb-3 p-4">
-                        <select class="form-select " aria-label="Servicio de interés">
-                            <option selected>Servicio de interés</option>
-                            <option value="1">Actuación, Teatro y Cine.</option>
-                            <option value="2">Dirección y dirección de actores.</option>
-                            <option value="3">Talleres y capacitaciones.</option>
-                            <option value="4">Asesoramiento artistico profesional.</option>
-                            <option value="5">Dramaturgia y guion.</option>
-                            <option value="6">Escenografía y utilería.</option>
-                            <option value="7">Otro.</option>
-                        </select>
-                    </div>
-
-                    <div class="mb-3 p-4">
-                        <label for="ciudad" class="form-label">Ciudad:</label>
-                        <input type="text" class="form-control" id="ciudad">
-                    </div>
-
-                    <div class="mb-3 p-4">
-                        <label for="detalle" class="form-label">Detalle de la propuesta:</label>
-                        <textarea class="form-control" id="detalle" rows="4"></textarea>
-                    </div>
-                    <div class="justify-content-center d-flex">
-                    <button type="submit" class="btn btn-primary fs-3 botonenviar">Enviar</button>
-                    </div>
-                </form>
-            </div>
-    </main>
-     <footer class="footerprincipal container-fluid">
-        <div class="container">
-            <div class="row align-items-center">
-                
-                <div class="col-md-6 text-start">
-                    <p class="mb-1 textopregunta">¿Tenés un proyecto en mente?</p>
-                    <a href="../pages/contacto.html" class="linkescena">¡Entremos en escena!</a>
-                </div>
-
-                <div class="col-md-6 d-flex justify-content-around gap-4">
-                    <a href="https://wa.me/" class="iconosocial"><i class="bi bi-whatsapp"></i></a>
-                    <a href="https://instagram.com/antonio_waka" class="iconosocial"><i class="bi bi-instagram"></i></a>
-                    <a href="mailto:kassabantonio@gmail.com" class="iconosocial"><i class="bi bi-envelope"></i></a>
-                </div>
-
-            </div>
+    <main class="container-fluid p-0 m-0">
+      <div class="row">
+        <div class="col-md-6">
+          <img
+            class="img-fluid justify-content-left d-inline"
+            src="../assets/caramaloparaquenadiellame.jpeg"
+            alt="Antonio Kassab con cara mala para que te contactes ya"
+          />
         </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3 p-4">
+              <label for="nombrecompleto" class="form-label"
+                >Nombre completo</label
+              >
+              <input type="text" class="form-control" id="nombrecompleto" />
+            </div>
+            <div class="mb-3 p-4">
+              <label for="Email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="Email" />
+            </div>
+            <div class="mb-3 p-4">
+              <select class="form-select" aria-label="Servicio de interés">
+                <option selected>Servicio de interés</option>
+                <option value="1">Actuación, Teatro y Cine.</option>
+                <option value="2">Dirección y dirección de actores.</option>
+                <option value="3">Talleres y capacitaciones.</option>
+                <option value="4">Asesoramiento artistico profesional.</option>
+                <option value="5">Dramaturgia y guion.</option>
+                <option value="6">Escenografía y utilería.</option>
+                <option value="7">Otro.</option>
+              </select>
+            </div>
+
+            <div class="mb-3 p-4">
+              <label for="ciudad" class="form-label">Ciudad:</label>
+              <input type="text" class="form-control" id="ciudad" />
+            </div>
+
+            <div class="mb-3 p-4">
+              <label for="detalle" class="form-label"
+                >Detalle de la propuesta:</label
+              >
+              <textarea class="form-control" id="detalle" rows="4"></textarea>
+            </div>
+            <div class="justify-content-center d-flex">
+              <button type="submit" class="btn btn-primary fs-3 botonenviar">
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="footerprincipal container-fluid">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 text-start">
+            <p class="mb-1 textopregunta">¿Tenés un proyecto en mente?</p>
+            <a href="contacto.html" class="linkescena">¡Entremos en escena!</a>
+          </div>
+
+          <div class="col-md-6 d-flex justify-content-around gap-4">
+            <a href="https://wa.me/" class="iconosocial"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+            <a href="https://instagram.com/antonio_waka" class="iconosocial"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="mailto:kassabantonio@gmail.com" class="iconosocial"
+              ><i class="bi bi-envelope"></i
+            ></a>
+          </div>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script>
-function toggleMenu() {
-    const menu = document.getElementById("menudesplegable");
-    if (menu.style.right === "0px") {
-        menu.style.right = "-350px";
-    } else {
-        menu.style.right = "0px";
-    }
-}
-</script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleMenu() {
+        const menu = document.getElementById("menudesplegable");
+        if (menu.style.right === "0px") {
+          menu.style.right = "-350px";
+        } else {
+          menu.style.right = "0px";
+        }
+      }
+    </script>
+  </body>
 </html>
