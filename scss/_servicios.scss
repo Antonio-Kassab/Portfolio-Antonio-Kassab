@@ -1,0 +1,61 @@
+@use "variables" as *;
+
+.mainservicios {
+  display: inline;
+  flex-direction: column;
+}
+
+.actuacion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.textoimagen1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.2rem;
+  background-color: nth($celestes, 3);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 0rem 2rem;
+}
+
+.contenedorimagenservicios {
+  position: relative;
+}
+
+.contenedorimagenservicios img {
+  width: 100%;
+  height: 35rem;
+  object-fit: cover;
+  display: block;
+}
+
+.textoimagen2 {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  border-radius: 0.2rem;
+  background-color: nth($naranjas, 2);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0rem 2rem;
+}
+
+.textoimagen3 {
+  position: absolute;
+  text-align: center;
+  bottom: 1rem;
+  font-weight: 550;
+  color: white;
+  font-size: 1rem;
+  padding: 0rem 4rem;
+}

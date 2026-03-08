@@ -1,0 +1,119 @@
+
+// boton de menu
+@media (max-width: 960px) {
+  body {
+    width: 100%;
+  }
+  .menu {
+    font-size: 1rem;
+    top: 47%;
+  }
+  .overlay {
+    width: 10rem;
+  }
+  .equis,
+  .overlaycontenido a {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .menu {
+    font-size: 0.8rem;
+    top: 54%;
+  }
+  .overlay {
+    width: 8rem;
+  }
+  .equis,
+  .overlaycontenido a {
+    font-size: 1.2rem;
+  }
+}
+
+// biografia
+@media (max-width: 400px) {
+  .headerbiografia h1 {
+    font-size: 2rem;
+  }
+
+  .cajatextobiografia {
+    padding: 1rem;
+  }
+
+  .ventana {
+    padding: 5rem;
+  }
+}
+
+// servicios
+@media (max-width: 1500px) {
+  .textoimagen1 {
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .textoimagen2 {
+    font-size: 1rem;
+    top: 2.5rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .textoimagen3 {
+    font-size: 0.9rem;
+    padding: 0rem 2rem;
+    bottom: 1.5rem;
+  }
+
+  .contenedorimagenservicios img {
+    height: 25rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .textoimagen1 {
+    font-size: 1.2rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .textoimagen2 {
+    font-size: 0.85rem;
+    top: 2rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .textoimagen3 {
+    font-size: 0.75rem;
+    padding: 0rem 1.5rem;
+    bottom: 1rem;
+  }
+
+  .contenedorimagen img {
+    height: 20rem;
+  }
+}
+
+// trabajos
+
+@media (max-width: 675px) {
+  .headerbiografia h2 {
+    font-size: 1.3rem;
+  }
+
+  .headerbiografia h1 {
+    font-size: 2rem;
+  }
+}
+
+// contacto 
+
+@media (max-width: 768px) {
+  .botonenviar {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .col-md-6 img {
+    height: 25rem;
+  }
+}

@@ -1,0 +1,141 @@
+@use "variables" as *;
+
+.headerindex {
+  background-image: url("../assets/fotoportada.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 550;
+  letter-spacing: 0.2rem;
+}
+
+.headerindex h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.biografiaindex {
+  margin: 1rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: nth($naranjas, 1);
+  letter-spacing: 0.1rem;
+}
+
+.biografiaindex h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  color: nth($celestes, 2);
+  font-weight: 600;
+}
+
+.buttonceleste {
+  background-color: nth($celestes, 3);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.buttonmas1 {
+  border-radius: 0.2rem;
+  background-color: nth($celestes, 3);
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  padding: 0rem 1rem;
+}
+
+.buttonmas1:hover {
+  background-color: nth($naranjas, 2);
+  color: white;
+}
+
+.fondocelesteindex {
+  background-color: nth($celestes, 1);
+}
+
+.serviciosindexnaranja {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  color: nth($naranjas, 1);
+  margin-bottom: -2rem;
+  font-weight: 550;
+}
+
+.cartas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-link {
+  color: nth($naranjas, 1);
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.5s;
+}
+
+.card-link:hover {
+  color: nth($celestes, 3);
+}
+
+.container-fluid {
+  padding: 3rem 5rem;
+}
+
+.col-md-3 {
+  padding: 0rem;
+}
+
+.col-md-3 img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.contenedorimagen {
+  position: relative;
+}
+
+.buttonmas {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0.2rem;
+  background-color: nth($celestes, 3);
+  border: none;
+  color: white;
+  font-size: 3rem;
+  padding: 0rem 2rem;
+}
+
+.buttonmas:hover {
+  background-color: nth($naranjas, 2);
+  color: white;
+}

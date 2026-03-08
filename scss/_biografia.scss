@@ -1,0 +1,33 @@
+@use "variables" as *;
+
+.fondobiografia {
+  background-image: url("../assets/biografia.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #000;
+}
+
+.headerbiografia {
+  background-color: nth($celestes, 1);
+  padding: 2rem;
+  text-align: center;
+}
+
+.headerbiografia h1 {
+  font-size: 3rem;
+  font-weight: 550;
+  color: nth($naranjas, 1);
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 2rem;
+}
+
+.cajatextobiografia {
+  background-color: nth($celestes, 1);
+  padding: 2rem;
+}
+
+.ventana {
+  padding: 6rem;
+}

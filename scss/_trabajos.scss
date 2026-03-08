@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+.headerbiografia h2 {
+  font-size: 1.5rem;
+  color: nth($celestes, 1);
+  letter-spacing: 0.1rem;
+  text-align: center; 
+  margin-bottom: -5rem;
+}
+
+.carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+  object-position: center;
+}

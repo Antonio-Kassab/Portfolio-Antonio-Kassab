@@ -1,0 +1,125 @@
+@use "variables" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $letra;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.menu {
+  position: fixed;
+  right: 2%;
+  top: 50%;
+  background: nth($naranjas, 1) ;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  z-index: 1001;
+  border-radius: 5%;
+  transition: 0.3s;
+}
+
+.menu:hover {
+  background: nth($celestes, 2);
+}
+
+.overlay {
+  width: 13rem;
+  height: auto;
+  position: fixed;
+  z-index: 2000;
+  top: 50%;
+  right: -350px;
+  transform: translateY(-50%);
+  background-color: black;
+  overflow: hidden;
+  transition: right 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.overlaycontenido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.overlaycontenido a {
+  padding: 1rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: nth($naranjas, 1);
+  transition: 0.3s;
+  display: block;
+}
+
+.overlaycontenido a:hover {
+  color: #ffffff;
+}
+
+.equis {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.equis:hover {
+  color: nth($naranjas, 3);
+}
+
+
+a {
+  color: nth($naranjas, 1);
+  text-decoration: none;
+}
+
+.footerprincipal {
+  background-color: nth($celestes, 1);
+}
+
+.textopregunta {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.linkescena {
+  color: nth($naranjas, 3);
+  font-size: 1.5rem;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+.linkescena:hover {
+  color: nth($celestes, 3);
+}
+
+.iconosocial {
+  color: black;
+  font-size: 2rem;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.iconosocial:hover {
+  color: nth($naranjas, 2);
+  transform: scale(1.3);
+}
