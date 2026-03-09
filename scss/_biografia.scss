@@ -15,13 +15,11 @@
 }
 
 .headerbiografia h1 {
-  font-size: 3rem;
-  font-weight: 550;
+  @include textos(3rem, 550, 0.1rem);
   color: nth($naranjas, 1);
-  letter-spacing: 0.1rem;
   text-align: center;
   margin: 2rem;
-}
+} 
 
 .cajatextobiografia {
   background-color: nth($celestes, 1);

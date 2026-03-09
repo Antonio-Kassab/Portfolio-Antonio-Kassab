@@ -21,9 +21,7 @@ img {
   border: none;
   color: #fff;
   padding: 0.5rem 1rem;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  font-weight: 800;
+  @include textos(1.5rem, 800, 1px);
   z-index: 1001;
   border-radius: 5%;
   transition: 0.3s;
@@ -97,6 +95,7 @@ a {
 }
 
 .textopregunta {
+  @include textos(1.5rem, 600, 0.1rem);
   font-size: 1rem;
   font-weight: 600;
 }

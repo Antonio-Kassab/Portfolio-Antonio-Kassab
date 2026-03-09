@@ -12,31 +12,25 @@
   align-items: center;
   text-align: center;
   color: white;
-  font-size: 1.6rem;
-  font-weight: 550;
-  letter-spacing: 0.2rem;
+  @include textos(1.6rem, 550, 0.2rem);
 }
 
 .headerindex h1 {
-  font-size: 4rem;
+  @include textos(4rem, 700, 0.1rem);
   margin-top: 1rem;
-  font-weight: 700;
-}
+} 
 
 .biografiaindex {
   margin: 1rem 2rem;
   text-align: center;
-  font-size: 1.2rem;
-  font-weight: 550;
+  @include textos(1.2rem, 550, 0.1rem);
   color: nth($naranjas, 1);
-  letter-spacing: 0.1rem;
 }
 
 .biografiaindex h2 {
-  font-size: 2.5rem;
+  @include textos(2.5rem, 600, 0.1rem);
   text-align: left;
   color: nth($celestes, 2);
-  font-weight: 600;
 }
 
 .buttonceleste {
@@ -68,12 +62,11 @@
 }
 
 .serviciosindexnaranja {
-  font-size: 2.5rem;
+  @include textos(2.5rem, 550, 0.1rem);
   text-align: center;
   padding: 0.5rem;
   color: nth($naranjas, 1);
   margin-bottom: -2rem;
-  font-weight: 550;
 }
 
 .cartas {

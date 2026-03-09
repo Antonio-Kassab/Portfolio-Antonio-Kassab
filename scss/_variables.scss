@@ -4,3 +4,9 @@ $letra: "montserrat", sans-serif;
 $naranjas: #ff864e, #ff7231, #ff580a; 
 
 $celestes: #bff6f8, #3ab1f2, #1488ba;
+
+@mixin textos($tamanio, $ancho, $espaciado) {
+  font-size: $tamanio;
+  font-weight: $ancho;
+  letter-spacing: $espaciado;
+}
